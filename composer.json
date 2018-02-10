@@ -1,0 +1,54 @@
+{
+  "name": "ionscript/pulsar",
+  "description": "A lightweight PHP library for a modern web application.",
+  "minimum-stability": "dev",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Serge Shportko",
+      "email": "ionscript.inc@gmail.com"
+    }
+  ],
+  "keywords": ["ionscript", "site", "framework", "opensource"],
+  "homepage": "http://www.ionscript.com",
+  "config": {
+    "vendor-dir": "system/vendor/"
+  },
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "ionscript/ions-mvc": "master",
+    "ionscript/ions-event": "master",
+    "ionscript/ions-http": "master",
+    "ionscript/ions-config": "master",
+    "ionscript/ions-db": "master",
+    "ionscript/ions-mail": "master",
+    "ionscript/ions-compress": "master",
+    "ionscript/ions-cache": "master",
+    "ionscript/ions-log": "master",
+    "ionscript/ions-route": "master",
+    "ionscript/ions-session": "master",
+    "ionscript/ions-uri": "master",
+    "ionscript/ions-std": "master"
+  },
+  "autoload": {
+    "classmap": [
+      "app/Admin/src",
+      "app/Application/src"
+    ]
+  },
+  "repositories": [
+    {"type": "git", "url": "https://github.com/ionscript/ions-mvc.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-event.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-http.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-config.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-db.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-mail.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-compress.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-cache.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-log.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-route.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-session.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-uri.git"},
+    {"type": "git", "url": "https://github.com/ionscript/ions-std.git"}
+  ]
+}

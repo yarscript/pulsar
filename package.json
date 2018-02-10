@@ -1,0 +1,13 @@
+{
+  "name": "ionscript/singular",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "name": "IoNs",
+      "email": "ionscript.inc@gmail.com"
+    }
+  ],
+  "devDependencies": {
+    "bower": "*"
+  }
+}
