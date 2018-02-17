@@ -137,6 +137,8 @@ class UserController extends Controller
             ];
         }
 
+        $data['placeholder'] = $this->model('tool/image')->resize('no_avatar.jpg', 100, 100);
+
         if ($this->session->has('success')) {
             $data['success'] = $this->session->get('success');
 

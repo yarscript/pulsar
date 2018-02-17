@@ -24,6 +24,7 @@ class HeaderController extends Controller
         $this->document->addStyle('vendor/fontawesome/css/font-awesome.css');
         $this->document->addStyle('vendor/bootstrap/dist/css/bootstrap.css');
         $this->document->addScript('vendor/jquery.appear.bas2k/jquery.appear.js');
+        $this->document->addScript('vendor/vide/dist/jquery.vide.js');
 
         $this->document->addScript('js/app.js');
 

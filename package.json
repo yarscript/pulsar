@@ -1,9 +1,10 @@
 {
-  "name": "ionscript/singular",
+  "name": "singular",
+  "description": "Pulsar Web Application",
   "version": "1.0.0",
   "contributors": [
     {
-      "name": "IoNs",
+      "name": "Serge Shportko",
       "email": "ionscript.inc@gmail.com"
     }
   ],
