@@ -11,7 +11,6 @@ $_['text_plus']              = '+';
 $_['text_minus']             = '-';
 $_['text_default']           = 'Default';
 $_['text_total']             = 'Total Posts';
-$_['text_keyword']           = 'Do not use spaces, instead replace spaces with - and make sure the SEO URL is globally unique.';
 
 // Column
 $_['column_name']            = 'Post Name';
@@ -38,11 +37,6 @@ $_['entry_category']         = 'Categories';
 $_['entry_related']          = 'Related Posts';
 $_['entry_tag']              = 'Post Tags';
 $_['entry_image']            = 'Image';
-
-// Help
-$_['help_category']          = '(Autocomplete)';
-$_['help_related']           = '(Autocomplete)';
-$_['help_tag']               = 'Comma separated';
 
 // Error
 $_['error_warning']          = 'Warning: Please check the form carefully for errors!';

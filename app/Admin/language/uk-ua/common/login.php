@@ -1,11 +1,9 @@
 <?php
 // header
-$_['heading_title']  = 'Адміністративний модуль';
+$_['heading_title']  = 'Увійти';
 
 // Text
-$_['text_heading']   = 'Адміністративний модуль';
 $_['text_login']     = 'Введіть Ваші дані для входу.';
-$_['text_forgotten'] = 'Забули пароль?';
 
 // Entry
 $_['entry_username'] = 'Логін';

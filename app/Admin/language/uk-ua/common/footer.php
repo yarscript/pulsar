@@ -1,4 +1,4 @@
 <?php
 // Text
-$_['text_footer'] 	= '<a href="https://ionscript.com">Pulsar</a> &copy; 2017-' . date('Y') . ' Всі права зарезервовано.';
-$_['text_version'] 	= 'Версія %s';
+$_['text_footer'] = '<a href="http://www.ionscript.com" target="_blank">Pulsar Application</a> &copy; <span> 2017-' . date('Y') . ' Ionscript Inc</span>';
+$_['text_version'] = 'Версія %s';

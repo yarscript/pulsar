@@ -5,9 +5,4 @@ $_['text_copyright'] = '<a href="http://demo.ionscript.com" target="_blank">%s A
 
 // Text
 $_['text_home']          = 'Home';
-$_['text_about']         = 'About';
-$_['text_contact']       = 'Contact';
-$_['text_support']       = 'Support';
-$_['text_faq']           = 'FAQ';
-$_['text_team']          = 'Team';
 $_['text_company']       = 'Company';

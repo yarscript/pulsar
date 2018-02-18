@@ -4,9 +4,9 @@ return [
     'db' => [
         'driver' => 'mysqli',
         'hostname' => 'localhost',
-        'username' => '',
+        'username' => 'root',
         'password' => '',
-        'database' => '',
+        'database' => 'pulsar.local',
         'port' => 3306,
         'charset' => 'utf8',
         'options' => []
@@ -20,6 +20,7 @@ return [
         'config_compression' => 0
     ],
     'url' => [
+        'base' => 'http://pulsar.local/',
         'path' => 'admin/'
     ],
     'router' => include 'routes.php',

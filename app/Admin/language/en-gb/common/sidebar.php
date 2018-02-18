@@ -3,11 +3,11 @@
 $_['text_dashboard'] = 'Dashboard';
 $_['text_application'] = 'Content';
 $_['text_category'] = 'Category';
-$_['text_page'] = 'Page';
+$_['text_page']  = 'All Pages';
 $_['text_pages'] = 'Pages';
-$_['text_page'] = 'All Pages';
 $_['text_localisation'] = 'Localisation';
 $_['text_language'] = 'Language';
+$_['text_users'] = 'Users';
 $_['text_user'] = 'User';
 $_['text_user_group'] = 'User Group';
 $_['text_system'] = 'System';

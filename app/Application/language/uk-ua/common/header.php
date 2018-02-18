@@ -1,12 +1,8 @@
 <?php
 // Text
-$_['text_home']          = 'Home';
-$_['text_blog']          = 'Blog';
-$_['text_about']         = 'About';
-$_['text_contact']       = 'Contact';
-$_['text_support']       = 'Support';
+$_['text_home']          = 'Головна';
+$_['text_blog']          = 'Блог';
+$_['text_about']         = 'Про нас';
+$_['text_contact']       = 'Контакти';
+$_['text_support']       = 'Підтримка';
 $_['text_faq']           = 'FAQ';
-$_['text_team']          = 'Team';
-
-
-

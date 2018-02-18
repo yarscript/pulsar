@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']  = 'Home';
+$_['heading_title']  = 'Гловна';
 
 
 

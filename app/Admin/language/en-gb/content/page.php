@@ -9,7 +9,6 @@ $_['text_total']             = 'Total Pages';
 $_['text_add']               = 'Add Page';
 $_['text_edit']              = 'Edit Page';
 $_['text_default']           = 'Default';
-$_['text_keyword']           = 'Do not use spaces, instead replace spaces with - and make sure the SEO URL is globally unique.';
 
 // Column
 $_['column_name']            = 'Page Name';
@@ -23,7 +22,6 @@ $_['entry_description']      = 'Description';
 $_['entry_meta_description'] = 'Meta Description';
 $_['entry_meta_title']       = 'Meta Title';
 $_['entry_meta_keyword']     = 'Meta Keywords';
-
 $_['entry_text']             = 'Text';
 $_['entry_top']              = 'Top';
 $_['entry_bottom']           = 'Bottom';

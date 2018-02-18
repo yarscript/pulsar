@@ -1,17 +1,26 @@
 <?php
 
 return [
-    'view' => [
-        'template' => 'php',
-        'theme' => 'default',
-        'directory' => __DIR__ . '/../view/theme',
-        'extension' => '.tpl',
+    'db' => [
+        'driver' => 'mysqli',
+        'hostname' => 'localhost',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'pulsar.local',
+        'port' => 3306,
+        'charset' => 'utf8',
+        'options' => []
     ],
-    'language' => [
-        'language' => 'en-gb',
-        'directory' => __DIR__ . '/../language',
+    'config' => [
+        'config_modification' => true,
+        'config_language' => 'en-gb',
+        'config_error_log' => true,
+        'config_error_display' => false,
+        'config_view_theme' => 'default',
+        'config_compression' => 0
     ],
     'url' => [
+        'base' => 'http://pulsar.local/',
         'path' => ''
     ],
     'router' => include 'routes.php',

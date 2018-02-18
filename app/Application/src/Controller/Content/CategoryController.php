@@ -23,6 +23,13 @@ class CategoryController extends Controller
             $limit = $this->config->get('config_limit');
         }
 
+        $data['breadcrumbs'] = [];
+
+        $data['breadcrumbs'][] = [
+            'text' => $this->language->get('text_home'),
+            'href' => $this->url->link('category', 'language=' . $this->config->get('config_language'))
+        ];
+
         if ($this->request->hasQuery('path')) {
             $paths = (string)$this->request->getQuery('path');
             $path = '';
@@ -36,6 +43,15 @@ class CategoryController extends Controller
                     $path = (int)$path_id;
                 } else {
                     $path .= '_' . (int)$path_id;
+                }
+
+                $category_info = $this->model('content/category')->getCategory($path_id);
+
+                if ($category_info) {
+                    $data['breadcrumbs'][] = [
+                        'text' => $category_info['name'],
+                        'href' => $this->url->link('category', 'language=' . $this->config->get('config_language') . '&path=' . $path)
+                    ];
                 }
             }
         } else {
@@ -65,6 +81,11 @@ class CategoryController extends Controller
             $data['heading_title'] = $category_info['name'];
 
             $data['name'] = $category_info['name'];
+
+            $data['breadcrumbs'][] = [
+                'text' => $category_info['name'],
+                'href' => $this->url->link('category', 'language=' . $this->config->get('config_language') . '&path=' . $paths)
+            ];
 
             $data['description'] = html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8');
             $data['image'] = 'img' . $category_info['image'];

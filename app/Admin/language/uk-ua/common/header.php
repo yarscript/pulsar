@@ -3,7 +3,7 @@
 $_['heading_title']        = 'Pulsar';
 
 // Text
-$_['text_online']          = 'Користувачів на сайті';
-$_['text_approval']        = 'Очікує підтвердження';
-$_['text_front']           = 'Вітрина';
-$_['text_logout']          = 'Вихід';
+$_['text_front']  = 'Сайт';
+$_['text_support'] = 'Підтримка';
+$_['text_profile'] = 'Профіль';
+$_['text_logout']  = 'Вихід';

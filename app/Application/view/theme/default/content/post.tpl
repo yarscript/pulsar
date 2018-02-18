@@ -16,6 +16,21 @@
         </div>
         <!-- END Hero Content -->
         <?php echo $menu; ?>
+
+        <div class="bg-gray-light">
+            <section class="content content-full content-boxed">
+                <div class="row">
+                    <div class="text-right hidden-xs">
+                        <ol class="breadcrumb push-10-t">
+                            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+                                <li><a class="link-effect" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+                            <?php } ?>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+
         <!-- Story Content -->
         <div class="bg-white">
             <section class="content content-boxed">

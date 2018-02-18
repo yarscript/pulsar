@@ -4,7 +4,7 @@ return [
     'db' => [
         'driver' => 'mysqli',
         'hostname' => 'localhost',
-        'username' => 'root',
+        'username' => '',
         'password' => '',
         'database' => '',
         'port' => 3306,
@@ -36,8 +36,5 @@ return [
     ],
     'image' => [
         'directory' => __DIR__ . '/../../public/img',
-    ],
-    'url' => [
-        'base' => 'http://pulsar-public/',
     ]
 ];

@@ -1,7 +1,7 @@
 <?php
 // Heading
-$_['heading_title'] = 'Page Not Found!';
+$_['heading_title']  = 'Сторінка не знайдена!';
 
 // Text
-$_['text_homepage'] = 'Go Back to Home';
-$_['text_not_found']    = 'Sorry, page was not found...';
+$_['text_homepage'] = 'Повернутися на Головну';
+$_['text_not_found'] = 'Вибачтачте.. Сторінка, яку Ви шукали, не знайдена.';

@@ -11,34 +11,24 @@ $_['thousand_point']        = ',';
 
 // Text
 $_['text_home']             = '<i class="fa fa-home"></i>';
-$_['text_yes']              = 'Yes';
-$_['text_no']               = 'No';
-$_['text_none']             = ' --- None --- ';
-$_['text_select']           = ' --- Please Select --- ';
-$_['text_all_zones']        = 'All Zones';
-$_['text_pagination']       = 'Showing %d to %d of %d (%d Pages)';
-$_['text_loading']          = 'Loading...';
-$_['text_no_results']       = 'No results!';
+$_['text_yes']                      = 'Так';
+$_['text_no']                       = 'Ні';
+$_['text_none']                     = ' --- Ні --- ';
+$_['text_select']                   = ' --- Виберіть --- ';
+$_['text_pagination']       = 'Показано %d по %d з %d (%d сторінок)';
+$_['text_loading']                  = 'Завантаження...';
+$_['text_no_results']               = 'Немає результатів!';
 
 // Buttons
-$_['button_address_add']    = 'Add Address';
-$_['button_back']           = 'Back';
-$_['button_continue']       = 'Continue';
-$_['button_cancel']         = 'Cancel';
-$_['button_delete']         = 'Delete';
-$_['button_download']       = 'Download';
-$_['button_edit']           = 'Edit';
+$_['button_back']           = 'Назад';
+$_['button_cancel']                 = 'Відмінити';
+$_['button_continue']               = 'Продовжити';
+$_['button_download']       = 'Завантажити';
 $_['button_filter']         = 'Refine Search';
-$_['button_new_address']    = 'New Address';
-$_['button_change_address'] = 'Change Address';
-$_['button_login']          = 'Login';
 $_['button_update']         = 'Update';
-$_['button_remove']         = 'Remove';
 $_['button_search']         = 'Search';
 $_['button_submit']         = 'Submit';
-$_['button_guest']          = 'Guest Checkout';
 $_['button_view']           = 'View';
-$_['button_upload']         = 'Upload File';
 $_['button_quote']          = 'Get Quotes';
 $_['button_list']           = 'List';
 $_['button_grid']           = 'Grid';

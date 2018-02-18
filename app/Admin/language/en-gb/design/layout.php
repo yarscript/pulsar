@@ -21,7 +21,7 @@ $_['column_name']         = 'Layout Name';
 $_['column_action']       = 'Action';
 
 // Entry
-$_['entry_layout']          = 'Layout Name';
+$_['entry_name']          = 'Layout Name';
 $_['entry_route']         = 'Route';
 $_['entry_module']        = 'Module';
 
@@ -29,5 +29,3 @@ $_['entry_module']        = 'Module';
 $_['error_permission']    = 'Warning: You do not have permission to modify layouts!';
 $_['error_name']          = 'Layout Name must be between 3 and 64 characters!';
 $_['error_default']       = 'Warning: This layout cannot be deleted as it is currently assigned as the default store layout!';
-$_['error_page']          = 'Warning: This layout cannot be deleted as it is currently assigned to %s pages!';
-$_['error_category']      = 'Warning: This layout cannot be deleted as it is currently assigned to %s categories!';

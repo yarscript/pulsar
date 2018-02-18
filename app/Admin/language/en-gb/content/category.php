@@ -9,7 +9,6 @@ $_['text_add']               = 'Add Category';
 $_['text_edit']              = 'Edit Category';
 $_['text_default']           = 'Default';
 $_['text_total']             = 'Total Categories';
-$_['text_keyword']           = 'Do not use spaces, instead replace spaces with - and make sure the SEO URL is globally unique.';
 
 // Column
 $_['column_name']            = 'Category Name';
@@ -26,15 +25,9 @@ $_['entry_meta_description'] = 'Meta Tag Description';
 $_['entry_keyword']          = 'Keyword';
 $_['entry_parent']           = 'Parent';
 $_['entry_top']              = 'Top';
-$_['entry_column']           = 'Columns';
 $_['entry_sort_order']       = 'Sort Order';
 $_['entry_status']           = 'Published';
 $_['entry_image']           = 'Image';
-
-// Help
-$_['help_filter']            = '(Autocomplete)';
-$_['help_top']               = 'Display in the top menu bar. Only works for the top parent categories.';
-$_['help_column']            = 'Number of columns to use for the bottom 3 categories. Only works for the top parent categories.';
 
 // Error
 $_['error_warning']          = 'Warning: Please check the form carefully for errors!';

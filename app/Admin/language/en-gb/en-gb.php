@@ -51,11 +51,18 @@ $_['button_download']               = 'Download';
 $_['button_rebuild']                = 'Rebuild';
 $_['button_upload']                 = 'Upload';
 $_['button_submit']                 = 'Submit';
+$_['button_approve']                = 'Approve';
+$_['button_generate']               = 'Generate';
 $_['button_install']                = 'Install';
 $_['button_uninstall']              = 'Uninstall';
+$_['button_login']                  = 'Login';
+$_['button_unlock']                 = 'Unlock';
 $_['button_folder']                 = 'Folder';
 $_['button_parent']                 = 'Parent';
 $_['button_search']                 = 'Search';
+$_['button_view']                   = 'View';
+$_['button_link']                   = 'Link';
+$_['button_apply']                  = 'Apply';
 
 // Tab
 $_['tab_address']                   = 'Address';
