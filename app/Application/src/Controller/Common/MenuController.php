@@ -12,24 +12,31 @@ class MenuController extends Controller
 
         $data['categories'] = [];
 
-        $categories = $this->model('site/category')->getCategories(0);
+        $categories = $this->model('content/category')->getCategories(0);
+
+
+        if ($this->request->hasQuery('path')) {
+            $parts = explode('_', (string)$this->request->getQuery('path'));
+
+            $category_id = (int)array_shift($parts);
+            $child_id = (int)array_shift($parts);
+        } else {
+            $category_id = 0;
+            $child_id = 0;
+        }
 
         foreach ($categories as $category) {
             if ($category['top']) {
                 // Level 2
                 $children_data = [];
 
-                $children = $this->model('site/category')->getCategories($category['id']);
+                $children = $this->model('content/category')->getCategories($category['id']);
 
                 foreach ($children as $child) {
-                    $filter_data = [
-                        'filter_category_id' => $child['category_id'],
-                        'filter_sub_category' => true
-                    ];
-
                     $children_data[] = [
-                        'name' => $child['name'] . ($this->config->get('config_page_count') ? ' (' . $this->model('site/page')->getTotalPages($filter_data) . ')' : ''),
-                        'href' => $this->url->link('product/category', 'path=' . $category['id'] . '_' . $child['category_id'])
+                        'name' => $child['name'],
+                        'href' => $this->url->link('category', 'path=' . $category['id'] . '_' . $child['id']),
+                        'active' => $child_id == $child['id'] ? 'active' : ''
                     ];
                 }
 
@@ -37,8 +44,8 @@ class MenuController extends Controller
                 $data['categories'][] = [
                     'name' => $category['name'],
                     'children' => $children_data,
-                    'column' => $category['column'] ? $category['column'] : 1,
-                    'href' => $this->url->link('site/category', 'path=' . $category['id'])
+                    'href' => $this->url->link('category', 'path=' . $category['id']),
+                    'active' => $category_id == $category['id'] ? 'active' : ''
                 ];
             }
         }

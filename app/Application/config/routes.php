@@ -16,7 +16,7 @@ return [
         ],
     ],
     'error-not-found' => [
-        'route' => '/error/not-found',
+        'route' => 'error-not-found',
         'defaults' => [
             'controller' => \Application\Error\NotFoundController::class,
             'action' => 'index',
@@ -40,6 +40,13 @@ return [
         'route' => '/language[/:action]',
         'defaults' => [
             'controller' => \Application\Common\LanguageController::class,
+            'action' => 'index'
+        ],
+    ],
+    'blog' => [
+        'route' => '/blog[/:action]',
+        'defaults' => [
+            'controller' => \Application\Content\CategoryController::class,
             'action' => 'index'
         ],
     ],

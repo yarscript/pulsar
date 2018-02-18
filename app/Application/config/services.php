@@ -9,7 +9,6 @@ return [
     'content_bottom' => \Application\Common\ContentBottomController::class,
     'header' => \Application\Common\HeaderController::class,
     'footer' => \Application\Common\FooterController::class,
-    'no-footer' => \Application\Common\NoFooterController::class,
     'menu' => \Application\Common\MenuController::class,
     'search' => \Application\Common\SearchController::class,
     'lang' => \Application\Common\LanguageController::class,

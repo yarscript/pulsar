@@ -29,7 +29,7 @@ return [
     ],
     'config' => [
         'config_modification' => false,
-        'config_error_log' => false,
+        'config_error_log' => true,
         'config_error_display' => false,
         'config_view_theme' => 'default',
         'config_compression' => 0
@@ -38,6 +38,6 @@ return [
         'directory' => __DIR__ . '/../../public/img',
     ],
     'url' => [
-        'base' => 'http://',
+        'base' => 'http://pulsar-public/',
     ]
 ];

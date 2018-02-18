@@ -178,6 +178,23 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <label class="col-xs-12"><?php echo $entry_sort_order; ?>?</label>
+                                            <div class="col-xs-12">
+                                                <div class="form-material form-material-primary ">
+                                                    <input class="form-control" type="number" name="sort_order" value="<?php echo $sort_order; ?>"><span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xs-12"><?php echo $entry_top; ?>?</label>
+                                            <div class="col-xs-12">
+                                                <label class="css-input switch switch-sm switch-primary">
+                                                    <input type="checkbox"
+                                                           name="top" <?php echo $top ? 'checked' : ''; ?> value="1"><span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <label class="col-xs-12"><?php echo $entry_status; ?>?</label>
                                             <div class="col-xs-12">
                                                 <label class="css-input switch switch-sm switch-primary">

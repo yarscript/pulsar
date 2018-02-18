@@ -15,6 +15,7 @@
             </div>
         </div>
         <!-- END Hero Content -->
+        <?php echo $menu; ?>
         <!-- Story Content -->
         <div class="bg-white">
             <section class="content content-boxed">

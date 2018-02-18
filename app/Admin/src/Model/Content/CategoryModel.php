@@ -8,7 +8,7 @@ class CategoryModel extends Model
 {
     public function addCategory($data)
     {
-        $this->db->execute("INSERT INTO category SET parent_id = '" . (int)$data['parent_id'] . "', `status` = '" . ((int)!isset($data['status']) ? 0 : $data['status']) . "', date_modified = NOW(), date_added = NOW()");
+        $this->db->execute("INSERT INTO category SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . ((int)!isset($data['top']) ? 0 : $data['top']) . "', sort_order = '" . (int)$data['sort_order'] . "', `status` = '" . ((int)!isset($data['status']) ? 0 : $data['status']) . "', date_modified = NOW(), date_added = NOW()");
 
         $id = $this->db->getLastId();
 
@@ -48,7 +48,7 @@ class CategoryModel extends Model
 
     public function editCategory($id, $data)
     {
-        $this->db->execute("UPDATE category SET parent_id = '" . (int)$data['parent_id'] . "', `status` = '" . ((int)!isset($data['status']) ? 0 : $data['status']) . "', date_modified = NOW() WHERE id = '" . (int)$id . "'");
+        $this->db->execute("UPDATE category SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . ((int)!isset($data['top']) ? 0 : $data['top']) . "', sort_order = '" . (int)$data['sort_order'] . "', `status` = '" . ((int)!isset($data['status']) ? 0 : $data['status']) . "', date_modified = NOW() WHERE id = '" . (int)$id . "'");
 
         if (isset($data['image'])) {
             $this->db->execute("UPDATE category SET image = " . $this->db->escape($data['image']) . " WHERE id = '" . (int)$id . "'");

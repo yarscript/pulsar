@@ -11,10 +11,6 @@ class CategoryController extends Controller
     {
         $this->language->load('content/category');
 
-        $this->document->setTitle($this->language->get('heading_title'));
-        $this->document->setDescription($this->config->get('config_meta_description'));
-        $this->document->setKeywords($this->config->get('config_meta_keyword'));
-
         if ($this->request->hasQuery('page')) {
             $page = $this->request->getQuery('page');
         } else {
@@ -28,9 +24,10 @@ class CategoryController extends Controller
         }
 
         if ($this->request->hasQuery('path')) {
+            $paths = (string)$this->request->getQuery('path');
             $path = '';
 
-            $parts = explode('_', (string)$this->request->getQuery('path'));
+            $parts = explode('_', $paths);
 
             $category_id = (int)array_pop($parts);
 
@@ -43,9 +40,22 @@ class CategoryController extends Controller
             }
         } else {
             $category_id = 0;
+            $paths = 0;
         }
 
-        $category_info = $this->model('content/category')->getCategory($category_id);
+        if($category_id === 0) {
+            $category_info = [
+                'id' => $category_id,
+                'name' => $this->language->get('heading_title'),
+                'description' => $this->language->get('description'),
+                'meta_title' => $this->language->get('heading_title'),
+                'meta_description' => $this->config->get('config_meta_description'),
+                'meta_keyword' => $this->config->get('config_meta_keyword'),
+                'image' => '/data/category.jpg'
+            ];
+        } else {
+            $category_info = $this->model('content/category')->getCategory($category_id);
+        }
 
         if ($category_info) {
             $this->document->setTitle($category_info['meta_title']);
@@ -62,21 +72,19 @@ class CategoryController extends Controller
             $data['posts'] = [];
 
             $options = [
-                'category_id' => $category_id,
-                //'order'              => 'DESC',
                 'start' => ($page - 1) * $limit,
                 'limit' => $limit
             ];
 
-            $post_total = $this->model('content/post')->getTotalPosts($options);
-            $results = $this->model('content/post')->getPosts($options);
+            $post_total = $this->model('content/post')->getTotalPosts($options, $category_id);
+            $results = $this->model('content/post')->getPosts($options, $category_id);
 
             foreach ($results as $id => $result) {
                 $data['posts'][] = [
                     'id' => $id,
                     'name' => $result['name'],
                     'description' => substr(trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8'))), 0, 100/*$this->config->get('theme_' . $this->config->get('config_theme') . '_post_description_length')*/) . '..',
-                    'href' => $this->url->link('post', 'path=' . $this->request->getQuery('path') . '&id=' . $id),
+                    'href' => $this->url->link('post', 'path=' . $paths . '&id=' . $id),
                     'date' => $result['date'],
                     'author' => $result['author'],
                     'image' => 'img' . $result['image'],
@@ -90,7 +98,7 @@ class CategoryController extends Controller
             $pagination->total = $post_total;
             $pagination->page = $page;
             $pagination->limit = $limit;
-            $pagination->url = $this->url->link('category', 'path=' . $this->request->getQuery('path') . '&page={page}');
+            $pagination->url = $this->url->link('category', 'path=' . $paths . '&page={page}');
 
             $data['pagination'] = $pagination->render();
 
@@ -117,6 +125,7 @@ class CategoryController extends Controller
             $data['column_right'] = $this->controller('column_right');
             $data['content_top'] = $this->controller('content_top');
             $data['content_bottom'] = $this->controller('content_bottom');
+            $data['menu'] = $this->controller('menu');
             $data['footer'] = $this->controller('footer');
             $data['header'] = $this->controller('header');
 

@@ -15,6 +15,7 @@
         </div>
     </div>
     <!-- END Hero Content -->
+    <?php echo $menu; ?>
     <section class="content content-boxed">
         <div class="row">
             <div class="col-md-2 col-sm-6 hidden-xs">
@@ -63,8 +64,8 @@
         <section class="content content-full content-boxed">
             <!-- Section Content -->
             <div class="push-20-t push-20 text-center">
-                <h3 class="h4 text-white-op push-20 " data-toggle="appear">Do you like our stories? Sign up today and get access to over <strong>10.000</strong> travel stories!</h3>
-                <a class="btn btn-rounded btn-noborder btn-lg btn-success" data-toggle="appear" data-class="animated bounceIn" href="frontend_pricing.html">Get Started Today</a>
+                <h3 class="h4 text-white-op push-20 " data-toggle="appear">Get Started Pulsar Application</h3>
+                <a class="btn btn-rounded btn-noborder btn-lg btn-success" data-toggle="appear" data-class="animated bounceIn" href="https://github.com/ionscript/pulsar"><i class="fa fa-2x fa-github"></i></a>
             </div>
             <!-- END Section Content -->
         </section>
