@@ -1,13 +1,13 @@
 .idea/
 
 vendor/
-!public/vendor
 node_modules/
 
 composer.lock
+#package-lock.json
 composer.phar
 
-public/img/cache/
-system/storage/cache/
-system/storage/log/
-system/storage/session/
+#public/img/cache/
+#system/storage/cache/
+#system/storage/log/
+#system/storage/session/
