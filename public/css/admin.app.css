@@ -15,6 +15,7 @@ html {
 }
 body {
   margin: 0;
+  text-rendering: optimizeLegibility;
 }
 article,
 aside,
@@ -5056,7 +5057,7 @@ button.close {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  /*border: 1px solid rgba(0, 0, 0, 0.2);*/
   border-radius: 6px;
   outline: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -5080,7 +5081,7 @@ button.close {
   opacity: .5;
 }
 .modal-header {
-  min-height: 16.42857143px;
+  min-height: 16px;
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -5089,7 +5090,7 @@ button.close {
 }
 .modal-title {
   margin: 0;
-  line-height: 1.42857143;
+  line-height: 1.4;
 }
 .modal-body {
   position: relative;
@@ -7634,95 +7635,7 @@ a.list-group-item:focus {
 .js-table-sections-header.open + tbody {
   display: table-row-group;
 }
-.modal.fade .modal-dialog {
-  -webkit-transition: all 0.12s ease-out;
-  transition: all 0.12s ease-out;
-}
-.modal.fade .modal-dialog.modal-dialog-popin {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.modal.fade .modal-dialog.modal-dialog-popout {
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-.modal.fade .modal-dialog.modal-dialog-slideup {
-  -webkit-transform: translate(0, 10%);
-  -ms-transform: translate(0, 10%);
-  transform: translate(0, 10%);
-}
-.modal.fade .modal-dialog.modal-dialog-slideright {
-  -webkit-transform: translate(-10%, 0);
-  -ms-transform: translate(-10%, 0);
-  transform: translate(-10%, 0);
-}
-.modal.fade .modal-dialog.modal-dialog-slideleft {
-  -webkit-transform: translate(10%, 0);
-  -ms-transform: translate(10%, 0);
-  transform: translate(10%, 0);
-}
-.modal.fade .modal-dialog.modal-dialog-fromright {
-  -webkit-transform: translateX(25%) rotate(10deg) scale(0.9);
-  -ms-transform: translateX(25%) rotate(10deg) scale(0.9);
-  transform: translateX(25%) rotate(10deg) scale(0.9);
-}
-.modal.fade .modal-dialog.modal-dialog-fromleft {
-  -webkit-transform: translateX(-25%) rotate(-10deg) scale(0.9);
-  -ms-transform: translateX(-25%) rotate(-10deg) scale(0.9);
-  transform: translateX(-25%) rotate(-10deg) scale(0.9);
-}
-.modal.in .modal-dialog.modal-dialog-popin,
-.modal.in .modal-dialog.modal-dialog-popout {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-.modal.in .modal-dialog.modal-dialog-slideup,
-.modal.in .modal-dialog.modal-dialog-slideright,
-.modal.in .modal-dialog.modal-dialog-slideleft {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.modal.in .modal-dialog.modal-dialog-fromright,
-.modal.in .modal-dialog.modal-dialog-fromleft {
-  -webkit-transform: translateX(0) rotate(0) scale(1);
-  -ms-transform: translateX(0) rotate(0) scale(1);
-  transform: translateX(0) rotate(0) scale(1);
-}
-.modal-dialog.modal-dialog-top {
-  margin-top: 0;
-  padding: 0 !important;
-}
-.modal-dialog.modal-dialog-top .modal-content {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-.modal-content {
-  border: none;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.modal-backdrop.in {
-  opacity: .25;
-}
-.modal-header {
-  padding: 18px 20px;
-  border-bottom-color: #eee;
-}
-.modal-body {
-  padding: 20px;
-}
-.modal-footer {
-  padding: 12px 20px;
-  border-top-color: #eee;
-}
-.modal-title {
-  font-weight: normal;
-}
+
 .fade.fade-up {
   opacity: 0;
   -webkit-transition: all 0.25s ease-out;
@@ -13866,4 +13779,9 @@ a {
   color: #646464;
   background-color: #f9f9f9;
   border-color: #e6e6e6;
+}
+
+
+#filemanager {
+  z-index: 2000;
 }

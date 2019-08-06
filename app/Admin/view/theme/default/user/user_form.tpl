@@ -133,6 +133,16 @@
                                             <img src="<?php echo $thumb; ?>" width="100px" height="100px" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" />
                                         </a>
                                         <input type="hidden" name="image" value="<?php echo $image; ?>" id="input-image" />
+
+
+<!--                                        <div class="form-group">-->
+<!--                                            <label class="col-sm-2 control-label">--><?php //echo $entry_image; ?><!--</label>-->
+<!--                                            <div class="col-sm-10"><a href="" id="thumb-image" data-toggle="image" class="img-thumbnail"><img src="--><?php //echo $thumb; ?><!--" alt="" title="" data-placeholder="--><?php //echo $placeholder; ?><!--" /></a>-->
+<!--                                                <input type="hidden" name="image" value="--><?php //echo $image; ?><!--" id="input-image" />-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+
+
                                     </div>
                                 </div>
                             </div>
