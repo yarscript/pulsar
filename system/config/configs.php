@@ -4,9 +4,9 @@ return [
     'db' => [
         'driver' => 'mysqli',
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'username' => 'root',
+        'password' => 'toor',
+        'database' => 'pulsar',
         'port' => 3306,
         'charset' => 'utf8',
         'options' => []

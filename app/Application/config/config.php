@@ -3,5 +3,5 @@
 return [
     'service' => include 'services.php',
     'listener' => include 'listeners.php',
-    'config' => include 'configs.php'
+    'config' => include 'app.php'
 ];
